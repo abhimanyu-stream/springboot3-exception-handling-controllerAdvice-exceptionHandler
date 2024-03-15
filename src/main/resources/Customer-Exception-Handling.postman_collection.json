@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "e2cc2e89-5b97-4b30-9ad0-4ae5220b2d44",
+		"name": "Customer-Exception-Handling",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21584215",
+		"_collection_link": "https://lively-sunset-184606.postman.co/workspace/Spring-Boot-Exception-Handling~eeddbb80-fd2e-42fd-a561-a19ae1efc7f0/collection/21584215-e2cc2e89-5b97-4b30-9ad0-4ae5220b2d44?action=share&source=collection_link&creator=21584215"
+	},
+	"item": [
+		{
+			"name": "create customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Tendulkar\",\r\n    \"email\":\"ten@gmail.com\",\r\n    \"mobile\":\"8789929244\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get a customer by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/find/customer/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"find",
+						"customer",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
